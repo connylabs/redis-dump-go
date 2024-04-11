@@ -255,7 +255,7 @@ func parseKeyspaceInfo(keyspaceInfo string) ([]uint8, error) {
 		if err != nil {
 			return nil, err
 		}
-		if dbIndex > 16 {
+		if dbIndex > 64 {
 			return nil, fmt.Errorf("Error parsing INFO keyspace")
 		}
 
